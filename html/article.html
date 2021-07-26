@@ -63,13 +63,18 @@ crossorigin="anonymous"
          </p>
          <hr>
             <div class="article-container">
-              <div class="message"></div>
+              <div class="message">
+                <p></p>
+              </div>
               <h5>Please leave your review and tell us what you think about our restuarant</h5>
             </div>
+            <h4 id="timeStamp"></h4>
+            <!-- <p id="botStarterMEssage" class="botText"></p> -->
             <div class="article-form">
               <label id="message"></label>
               <input type="text" name="msg" id="msg" placeholder="Enter your text here..." autocomplete="off" required />
-              <button class="btn btn-success light" id="send"><i class="fas fa-paper-plane" onClick="messageTake()"></i>Send</button>
+              
+              <button class="btn btn-success light" id="send"><i class="fas fa-paper-plane" onclick="getResponse()"></i>Send</button>
             </div>
         </div>
          
